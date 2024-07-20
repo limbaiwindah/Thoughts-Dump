@@ -1,0 +1,84 @@
+/*
+. for class
+# for id
+the name of the attribute for common
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: snow;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#note {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #8aa0d8;
+    background-color: hsl(144, 32%, 91%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #de8380;
+    color: rgb(128, 169, 203);
+}
+
+@keyframes crumple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(0.9) rotate(10deg);
+        opacity: 0.8;
+    }
+
+    40% {
+        transform: scale(0.8) rotate(-10deg);
+        opacity: 0.6;
+    }
+
+    60% {
+        transform: scale(0.7) rotate(10deg);
+        opacity: 0.4;
+    }
+
+    80% {
+        transform: scale(0.6) rotate(-10deg);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: scale(0.5) rotate(10deg);
+        opacity: 0;
+    }
+}
+
+.crumpling {
+    animation: crumple 1s forwards;
+}
+
